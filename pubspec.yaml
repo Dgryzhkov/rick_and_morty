@@ -32,8 +32,12 @@ dependencies:
   equatable: ^2.0.0
   #Functional programming thingies
   dartz: ^0.9.2
-
+  #REmote API
   http: ^0.13.3
+  # Local cache
+  shared_preferences: ^2.0.5
+
+
 
 dev_dependencies:
   flutter_test:
