@@ -18,7 +18,7 @@ class PersonEntity extends Equatable {
   final DateTime created;
 
   PersonEntity(
-      {required this.id,
+      { required this.id,
       required this.name,
       required this.status,
       required this.species,
