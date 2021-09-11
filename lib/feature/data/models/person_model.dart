@@ -1,6 +1,6 @@
-  import 'package:rick_and_morty/feature/data/models/location_model.dart';
+import 'package:rick_and_morty/feature/data/models/location_model.dart';
 import 'package:rick_and_morty/feature/domain/entities/person_entity.dart';
-  import 'package:meta/meta.dart';
+import 'package:meta/meta.dart';
 
   class PersonModel extends PersonEntity {
     PersonModel({

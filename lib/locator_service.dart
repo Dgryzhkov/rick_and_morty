@@ -34,7 +34,7 @@ Future<void>init() async{
     () => PersonRepositoryImpl(
         remoteDataSource: sl(),
         localDataSource: sl(),
-        networkInfo: sl()
+        networkInfo: sl(),
     ),
   );
 
@@ -45,18 +45,16 @@ sl.registerLazySingleton<PersonRemoteDataSource>(
 );
   
 sl.registerLazySingleton<PersonLocalDataSource>(
-        () => PersonLocalDataSourceImpl(sharedPreferences: sl()
-        ),
+        () => PersonLocalDataSourceImpl(sharedPreferences: sl()),
 );
 
   //Core
 sl.registerLazySingleton<NetworkInfo>(
-      () => NetworkInfoIml(sl(),
-  ),
+      () => NetworkInfoIml(sl()),
 );
   //External
   final sharedPreferences = await SharedPreferences.getInstance();
-  sl.registerLazySingleton(() async => sharedPreferences);
+  sl.registerLazySingleton(() => sharedPreferences);
   sl.registerLazySingleton(() => http.Client());
   sl.registerLazySingleton(() => InternetConnectionChecker());
 

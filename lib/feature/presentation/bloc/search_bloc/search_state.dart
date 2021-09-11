@@ -1,4 +1,3 @@
-import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:rick_and_morty/feature/domain/entities/person_entity.dart';
 
